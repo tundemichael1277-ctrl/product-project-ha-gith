@@ -4,6 +4,7 @@ resource "aws_launch_template" "product_project_ha_lt" {
   image_id               = "ami-011c04cb040289c2a"
   instance_type          = "t3.micro"
   key_name               = "mine"
+  
   vpc_security_group_ids = [aws_security_group.product_project_ha_sg.id]
   #   iam_instance_profile {
   #     name = ""
